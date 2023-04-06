@@ -1,0 +1,481 @@
+/* importes de estilos de fuente de google forms */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+
+/* Reseteo para que mi pagina no sufra errores */
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+/* body solo meter color de fondo y formato de letra NADA MAS */
+body {
+  background-color: #c6cac9;
+  font-family: "Playfair Display", serif;
+}
+
+/* estilos del menu de navegacion */
+nav ul {
+  text-align: center;
+  background-color: #3f4927;
+  padding: 30px;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0px 20px;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: #8d9272;
+}
+
+/* Estilos al Principal */
+.principal-full {
+  width: 100%;
+  height: 700px;
+  background: url(../img/Portada.jpeg) no-repeat 50% 50%;
+  background-size: cover;
+  display: table;
+  margin: auto;
+  top: 0;
+}
+
+.principal-full .full-inner {
+  width: 100%;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.content {
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+}
+
+.content h1 {
+  font-size: 3.35rem;
+  text-shadow: 0 0 300px black;
+}
+
+.content a {
+  border-radius: 9px;
+  text-decoration: none;
+  color: #b38d60;
+  font-weight: bold;
+  border: 3px solid;
+  padding: 7px 13px;
+  margin: 50px;
+  font-size: 2rem;
+}
+
+.content a:hover {
+  color: #c6cac9;
+}
+
+/* Estilos al Trabajamos (imagen y texto) */
+.comoTrabajamos {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
+.comoTrabajamos img {
+  width: 325px;
+  height: 385px;
+  margin-top: 100px;
+  margin-left: 15%;
+}
+
+.textoTrabajamos {
+  margin-top: 100px;
+  margin-right: 15%;
+}
+
+.comoTrabajamos h2 {
+  margin-bottom: 20px;
+}
+
+/* Estilo Tratamientos */
+.titulo-tratamientos {
+  text-align: center;
+  margin: 20px;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.flex-tratamientos {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 70px;
+}
+
+.tratamientos-img {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border-radius: 10px;
+  text-align: center;
+}
+.tratamientos-img img {
+  width: 300px;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 5px 8px 12px black;
+}
+
+.tratamientos-img:hover {
+  transform: scale(1.1);
+  box-shadow: 13px 15px 37px black;
+}
+
+.tratamientos-img img {
+  width: 300px;
+}
+
+.tratamientos-img img {
+  width: 300px;
+  height: 300px;
+}
+
+.tratamientos-img img {
+  width: 300px;
+}
+
+.tratamientos-img p {
+  width: 300px;
+  text-align: justify;
+}
+
+/* footer */
+.cita {
+  margin-top: 60px;
+  width: 100%;
+  height: 180px;
+  background-color: #3f4927;
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-rows: 0.5fr 1fr 0.5fr;
+}
+
+.cita-text {
+  font-size: 1.8rem;
+  width: 100%;
+  height: auto;
+  grid-row: 2/3;
+  grid-column: 2/3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.cita-text img {
+  width: 185px;
+  height: 185px;
+  grid-column: 2/3;
+  grid-row: 1/3;
+  align-self: center;
+  justify-self: center;
+}
+
+.cita-text-text {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  align-self: center;
+  justify-self: center;
+}
+
+/* Footer ubicacion y contacto */
+.ubicacion {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.ubicacion h4 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  text-align: center;
+  align-self: center;
+  font-size: 1.5rem;
+}
+
+.ubicacion p {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.ubicacion h3 {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  align-self: center;
+}
+
+.ubicacionIcono {
+  grid-column: 1/2;
+  grid-row: 4/5;
+  display: flex;
+  align-items: center;
+}
+
+.email {
+  grid-column: 1/2;
+  grid-row: 5/6;
+  display: flex;
+  align-items: center;
+}
+
+.telefono {
+  grid-column: 1/2;
+  grid-row: 6/7;
+  display: flex;
+  align-items: center;
+}
+
+.glooglemaps {
+  grid-column: 2/3;
+  grid-row: 1/7;
+  align-self: center;
+  margin: 20px;
+}
+
+/*  */
+/* PAGINA NOSOTROS */
+/*  */
+
+/* Estilo quien eres imagen */
+.quienEres {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.quienEres img {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  align-self: center;
+  justify-self: center;
+  padding-left: 45%;
+  padding-top: 6%;
+}
+
+.quienEres h2 {
+  margin: 30px 0px 20px 20px;
+}
+
+.quienEres ul {
+  margin-left: 80px;
+}
+
+/* Estilo sobre mi */
+
+.sobreMi {
+  margin: 15px 50px 0px 120px;
+}
+
+/*  */
+/* PAGINA Terapia y Tratamientos */
+/*  */
+
+/* Estilo Cuadro principal */
+.CuadritoPrincipal {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 1%;
+  border-style: solid;
+  border-color: black;
+}
+
+.textCuadrito {
+  font-size: 1.2rem;
+  padding: 5%;
+}
+
+.textCuadrito h3,
+.textCuadrito p {
+  margin-left: 5%;
+  padding: 1%;
+}
+.imagenCuadrito {
+  grid-row: 1/3;
+  grid-column: 2/3;
+}
+.CuadritoPrincipal img {
+  height: 100%;
+  width: 100%;
+}
+
+/*  */
+/* PAGINA Contacto */
+/*  */
+
+/* Estilo Contacto */
+.contactoPage {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.01fr 0.01fr 0.01fr 0.01fr 1fr;
+  border-style: solid;
+  border-color: black;
+  margin: 10px;
+}
+
+.formulario {
+  grid-column: 1/2;
+  grid-row: 1/4;
+  margin: 10%;
+}
+
+.formulario input {
+  width: 100px;
+  height: 30px;
+}
+
+.nombreContacto input {
+  width: 75%;
+  height: 25px;
+  margin-bottom: 50px;
+}
+
+.emailContacto input {
+  width: 75%;
+  height: 25px;
+  margin-bottom: 50px;
+}
+
+.telefonoContacto input {
+  width: 30%;
+  height: 25px;
+  margin-bottom: 50px;
+}
+
+.observacionesContacto textarea {
+  width: 75%;
+  height: 100px;
+  margin-bottom: 25px;
+}
+
+.ubicacionContactoMio {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  align-self: center;
+}
+
+.emailContactoMio {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  align-self: center;
+}
+
+.telefonoContactoMio {
+  grid-column: 2/3;
+  grid-row: 4/5;
+  align-self: center;
+}
+
+.iframe {
+  grid-column: 2/3;
+  grid-row: 5/6;
+}
+
+.contactoPage h3 {
+  align-self: center;
+}
+
+/*  */
+/* MEDIA QUERIES*/
+/* Tablet */
+@media only screen and (max-width: 768) {
+}
+
+/* Movile */
+@media only screen and (max-width: 576px) {
+  /* INDEX PAGE */
+  /* estilo del menu navegacion (celular) */
+  nav ul {
+    display: flex;
+    padding: 30px 0px 30px 0px;
+    align-items: center;
+  }
+
+  /* estilo al Trabajamos (imagen y texto) */
+  .comoTrabajamos {
+    display: grid;
+    gap: 0px;
+  }
+
+  .comoTrabajamos img {
+    width: 325px;
+    height: 385px;
+    padding: 0px;
+    margin: 0px;
+    grid-row: 2/3;
+    justify-self: center;
+  }
+
+  .textoTrabajamos {
+    padding: 0px;
+    margin: 0px;
+    font-size: 1.7rem;
+  }
+
+  .comoTrabajamos h2 {
+    text-align: center;
+  }
+
+  .comoTrabajamos h5 {
+    font-size: 2rem;
+  }
+
+  /* Estilo Tratamientos */
+  .flex-tratamientos {
+    font-size: 1.5rem;
+  }
+
+  .tratamientos-img p {
+    width: 440px;
+  }
+
+  .tratamientos-img h4 {
+    font-size: 1.8rem;
+  }
+
+  /* footer */
+  .cita {
+    grid-template-columns: 0.2fr 5fr 0.2fr;
+  }
+
+  .cita-text {
+    font-size: 2rem;
+  }
+
+  /*  */
+  /* PAGINA NOSOTROS */
+  /*  */
+
+  /* Estilo quien eres imagen */
+  .quienEres img {
+    padding: 10px;
+    padding-top: 20px;
+  }
+
+  .quienEres h2 {
+    margin: 0px;
+    align-self: center;
+  }
+
+  .quienEres ul {
+    margin-left: 40px;
+  }
+
+  /* Estilo sobre mi */
+
+  .sobreMi {
+    margin: 0px 50px 0px 50px;
+  }
+}
