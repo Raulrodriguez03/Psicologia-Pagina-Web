@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/* importar para tener un mejor codigo */ /* creacion de variables */
+/* variables de tamaños de media */
+/* media de tablet */
+@media (max-width: 768px) {
+  .comoTrabajamos {
+    flex-direction: column-reverse;
+    gap: 0px;
+  }
+  .comoTrabajamos .textoTrabajamos {
+    margin-top: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .comoTrabajamos img {
+    margin: 0;
+    align-self: center;
+  }
+  .quienEres h2 {
+    margin: 30px 0px 10px 40px;
+  }
+}/*# sourceMappingURL=main.css.map */

@@ -225,6 +225,11 @@ nav ul li a:hover {
   align-items: center;
 }
 
+.ubicacionIcono a {
+  color: black;
+  text-decoration: none;
+}
+
 .email {
   grid-column: 1/2;
   grid-row: 5/6;
@@ -232,11 +237,22 @@ nav ul li a:hover {
   align-items: center;
 }
 
+.email a {
+  color: black;
+  text-decoration: none;
+}
+
 .telefono {
   grid-column: 1/2;
   grid-row: 6/7;
   display: flex;
   align-items: center;
+}
+
+.telefono a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.3rem;
 }
 
 .glooglemaps {
@@ -366,16 +382,34 @@ nav ul li a:hover {
   align-self: center;
 }
 
+.ubicacionContactoMio a {
+  text-decoration: none;
+  color: black;
+}
+
 .emailContactoMio {
   grid-column: 2/3;
   grid-row: 3/4;
   align-self: center;
+  text-decoration: none;
+}
+
+.emailContactoMio a {
+  text-decoration: none;
+  color: black;
 }
 
 .telefonoContactoMio {
   grid-column: 2/3;
   grid-row: 4/5;
   align-self: center;
+  text-decoration: none;
+}
+
+.telefonoContactoMio a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.3rem;
 }
 
 .iframe {
@@ -389,10 +423,6 @@ nav ul li a:hover {
 
 /*  */
 /* MEDIA QUERIES*/
-/* Tablet */
-@media only screen and (max-width: 768) {
-}
-
 /* Movile */
 @media only screen and (max-width: 576px) {
   /* INDEX PAGE */
@@ -467,6 +497,7 @@ nav ul li a:hover {
   .quienEres h2 {
     margin: 0px;
     align-self: center;
+    margin: 30px 0px 10px 10px;
   }
 
   .quienEres ul {
@@ -478,4 +509,57 @@ nav ul li a:hover {
   .sobreMi {
     margin: 0px 50px 0px 50px;
   }
+
+  /* Estilo Contacto */
+  .ubicacionContactoMio {
+    display: flex;
+}
+
+  .ubicacionContactoMio img{
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+
+/* Footer ubicacion y contacto */
+.ubicacion {
+  grid-template-columns: 1fr 1.5fr;
+  grid-template-rows: 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr;
+}
+
+.ubicacion h4 {
+  font-size: 1.1rem;
+}
+
+.ubicacion p {
+  font-size: 0.8rem;
+}
+
+.ubicacion h3 {
+  font-size: 1.1rem;
+}
+
+.ubicacionIcono a {
+  font-size: 0.7rem;
+}
+
+.email a {
+  font-size: 0.7rem;
+}
+
+.telefono a {
+  font-size: 1rem;
+}
+
+.glooglemaps {
+  grid-column: 2/3;
+  grid-row: 1/7;
+  align-self: center;
+  margin: 20px;
+}
+
+/* Estilos al Principal */
+.content a {
+  padding: 0px;
+  margin: 30px;
 }
